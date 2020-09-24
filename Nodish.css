@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+browser {
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: grey;
+  border: 3px solid rgba(0, 100, 200, 1);
+}
+addressbar {
+  display: block;
+  padding: 3px 6px;
+  background: rgba(200, 200, 200, 1);
+  height: 30px;
+  line-height: 30px;
+}
+webpage {
+  background: white;
+  width: 100%;
+  height: calc(100% - 20px);
+  display: block;
+  position: relative;
+}
+button {
+  display: inline-block;
+  margin: 20px;
+}
+
+terminal {
+  display: block;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  background: rgba(30, 30, 30, 1);
+  right: 0px;
+  top: 0px;
+  color: rgba(225, 225, 225, 1);
+  padding: 15px;
+  font-family: monospace;
+  line-height: 20px;
+  overflow-y: scroll;
+  scroll-snap-align: end;
+}
+
+line,
+inputline,
+terminalline {
+  display: block;
+}
+
+inputline {
+  display: inline-block;
+  width: calc(100% - 40px);
+  margin-left: 10px;
+  color: rgba(170, 170, 170, 1);
+}
+
+httprequestterminaloutput {
+  color: rgba(170, 170, 170, 1);
+}
+
+notificationline {
+  color: #dff80f;
+}
+
+terminalarrow {
+  display: inline-block;
+}
+
+inputline:focus,
+inpuline:active {
+  outline: none;
+}
+
+httpterminaloutput {
+  color: rgba(0, 200, 50, 1);
+}
+
+httpheaderterminaloutput {
+  color: rgba(0, 150, 100, 1);
+}
+
+intro {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  animation: intro;
+  animation-duration: 3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+@keyframes intro {
+  0% {
+    opacity: 50%;
+    transform: scale(0, 0) translateY(-50%) translateX(-50%);
+  }
+  50% {
+    opacity: 70%;
+    transform: scale(0.25, 0.25) translateY(-50%) translateX(-50%);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1, 1) translateY(-50%) translateX(-50%);
+  }
+}
+
+requestor,
+port {
+  text-shadow: 1px 0px 0px rgba(255, 255, 255, 1);
+}
