@@ -1,0 +1,3 @@
+# Nodish: Sandboxed node.js http emulator
+
+Nodish is a split screen node.js http emulator. One side of the screen is a virtual browser and on the other a virtual terminal.
