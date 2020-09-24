@@ -1,17 +1,29 @@
-<browser>
-  <addressbar contenteditable>
-    ndsh://
-  </addressbar>
-  <webpage>
-    <button onbehalfof="browser" endpoint="38923">
-      Request Node.js Website
-    </button>
-  </webpage>
-</browser>
+<!doctype html>
+<html>
+  <head>
+    <title>Nodish</title>
+    <link rel="stylesheet" type="text/css" href="Nodish.css" />
+  </head>
+  
+  <body>
+    <browser>
+      <addressbar contenteditable>
+        ndsh://
+      </addressbar>
+      
+      <webpage>
+        <button onbehalfof="browser" endpoint="38923">
+          Request Node.js Website
+        </button>
+      </webpage>
+    </browser>
 
-<terminal>
-  <line><br>Nodish terminal</line>
-  <line><br>Run Node.js and start a http server by typing 'nodejs httpServer.js'</line>
-  <terminalarrow><br>></terminalarrow>
-  <inputline contenteditable></inputline>
-</terminal>
+    <terminal>
+      <line><br>Nodish terminal</line>
+      <line><br>Run Node.js and start a http server by typing 'nodejs httpServer.js'</line>
+      <terminalarrow><br>></terminalarrow>
+      <inputline contenteditable></inputline>
+    </terminal>
+    <script src="Nodish.js"></script>
+  </body>
+</html>
